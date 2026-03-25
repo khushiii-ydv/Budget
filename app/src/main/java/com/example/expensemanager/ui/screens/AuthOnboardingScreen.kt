@@ -800,7 +800,7 @@ private fun OtpVerificationCard(
                 if (isLoading) {
                     CircularProgressIndicator(color = Color.White, modifier = Modifier.size(24.dp))
                 } else {
-                    Text("Verify & Continue", fontWeight = FontWeight.Bold)
+                    Text("Verify & Continue", color = Color.White, fontWeight = FontWeight.Bold)
                 }
             }
 

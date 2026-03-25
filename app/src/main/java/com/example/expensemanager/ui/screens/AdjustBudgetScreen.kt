@@ -84,7 +84,7 @@ fun AdjustBudgetScreen(
             ) {
                 Icon(Icons.Default.Save, contentDescription = null)
                 Spacer(modifier = Modifier.width(8.dp))
-                Text("Save All Changes", fontWeight = FontWeight.Bold)
+                Text("Save All Changes", color = Color.White, fontWeight = FontWeight.Bold)
             }
         }
     ) { paddingValues ->

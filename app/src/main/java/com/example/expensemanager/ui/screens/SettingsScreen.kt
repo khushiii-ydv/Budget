@@ -32,6 +32,10 @@ fun SettingsScreen(
     viewModel: com.example.expensemanager.viewmodel.SettingsViewModel = androidx.lifecycle.viewmodel.compose.viewModel()
 ) {
     val uiState = viewModel.uiState
+    var showIncomeDialog by remember { mutableStateOf(false) }
+    var showCurrencyDialog by remember { mutableStateOf(false) }
+    var tempIncome by remember { mutableStateOf("") }
+    var isDarkTheme by remember { mutableStateOf(false) }
 
     LaunchedEffect(Unit) {
         viewModel.fetchProfile()
@@ -83,7 +87,7 @@ fun SettingsScreen(
                 ) {
                     Column(
                         modifier = Modifier.padding(32.dp),
-                        horizontalAlignment = Alignment.CenterHorizontally
+                        horizontalAlignment = Alignment.Start
                     ) {
                         Box(contentAlignment = Alignment.BottomEnd) {
                             Box(
@@ -124,14 +128,14 @@ fun SettingsScreen(
                         }
 
                         Spacer(modifier = Modifier.height(16.dp))
-                        Text(uiState.userProfile?.name ?: "Financial Architect", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color(0xFF001944))
+                        Text(uiState.userProfile?.name ?: "Khushi Yadav", fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color(0xFF001944))
                         Text("Wealth Curation Mode", fontSize = 14.sp, color = Color.Gray)
 
                         Spacer(modifier = Modifier.height(24.dp))
                         
-                        ContactItem(Icons.Default.Phone, uiState.userProfile?.mobile_number ?: "+1 (555) 928-1034")
+                        ContactItem(Icons.Default.Phone, uiState.userProfile?.mobile_number ?: "+91 9307136478")
                         Spacer(modifier = Modifier.height(8.dp))
-                        ContactItem(Icons.Default.Email, "curator@wealtharchitect.io")
+                        ContactItem(Icons.Default.Email, "khushi@gmail.com")
                     }
                 }
             }
@@ -145,14 +149,19 @@ fun SettingsScreen(
                     ParameterCard(
                         label = "Monthly Income",
                         value = "₹${String.format("%,.2f", uiState.userProfile?.monthly_income ?: 0.0)}",
-                        icon = Icons.Default.AccountBalanceWallet
+                        icon = Icons.Default.AccountBalanceWallet,
+                        onClick = {
+                            tempIncome = (uiState.userProfile?.monthly_income ?: 0.0).toString()
+                            showIncomeDialog = true
+                        }
                     )
                     
                     ParameterCard(
                         label = "Currency Preference",
                         value = "${uiState.userProfile?.currency ?: "INR"} (₹)",
                         icon = Icons.Default.Sync,
-                        isDropdown = true
+                        isDropdown = true,
+                        onClick = { showCurrencyDialog = true }
                     )
                 }
             }
@@ -173,7 +182,9 @@ fun SettingsScreen(
                             icon = Icons.Outlined.DarkMode,
                             title = "Interface Theme",
                             subtitle = "Switch between light and dark mode",
-                            hasSwitch = true
+                            hasSwitch = true,
+                            switchState = isDarkTheme,
+                            onSwitchChange = { isDarkTheme = it }
                         )
                         ConfigListItem(
                             icon = Icons.Outlined.Security,
@@ -228,6 +239,80 @@ fun SettingsScreen(
             
             item { Spacer(modifier = Modifier.height(32.dp)) }
         }
+
+        // Dialogs
+        if (showIncomeDialog) {
+            AlertDialog(
+                onDismissRequest = { showIncomeDialog = false },
+                title = { Text("Update Monthly Income", color = Color(0xFF001944), fontWeight = FontWeight.Bold) },
+                text = {
+                    TextField(
+                        value = tempIncome,
+                        onValueChange = { tempIncome = it },
+                        label = { Text("Income Amount") },
+                        modifier = Modifier.fillMaxWidth(),
+                        colors = TextFieldDefaults.colors(
+                            focusedContainerColor = Color.Transparent,
+                            unfocusedContainerColor = Color.Transparent,
+                            focusedIndicatorColor = Color(0xFF001944),
+                            focusedLabelColor = Color(0xFF001944)
+                        )
+                    )
+                },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            val income = tempIncome.toDoubleOrNull() ?: 0.0
+                            viewModel.updateProfile(income, uiState.userProfile?.currency ?: "INR") { success ->
+                                if (success) showIncomeDialog = false
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF001944), contentColor = Color.White)
+                    ) {
+                        Text("Save")
+                    }
+                },
+                dismissButton = {
+                    TextButton(onClick = { showIncomeDialog = false }) {
+                        Text("Cancel", color = Color.Gray)
+                    }
+                },
+                containerColor = Color.White,
+                shape = RoundedCornerShape(24.dp)
+            )
+        }
+
+        if (showCurrencyDialog) {
+            val currencies = listOf("INR", "USD", "EUR", "GBP", "JPY")
+            AlertDialog(
+                onDismissRequest = { showCurrencyDialog = false },
+                title = { Text("Select Currency", color = Color(0xFF001944), fontWeight = FontWeight.Bold) },
+                text = {
+                    Column {
+                        currencies.forEach { currency ->
+                            TextButton(
+                                onClick = {
+                                    viewModel.updateProfile(uiState.userProfile?.monthly_income ?: 0.0, currency) { success ->
+                                        if (success) showCurrencyDialog = false
+                                    }
+                                },
+                                modifier = Modifier.fillMaxWidth()
+                            ) {
+                                Text(currency, color = Color(0xFF001944))
+                            }
+                        }
+                    }
+                },
+                confirmButton = {},
+                dismissButton = {
+                    TextButton(onClick = { showCurrencyDialog = false }) {
+                        Text("Close", color = Color.Gray)
+                    }
+                },
+                containerColor = Color.White,
+                shape = RoundedCornerShape(24.dp)
+            )
+        }
     }
 }
 
@@ -241,9 +326,16 @@ fun ContactItem(icon: androidx.compose.ui.graphics.vector.ImageVector, text: Str
 }
 
 @Composable
-fun ParameterCard(label: String, value: String, icon: androidx.compose.ui.graphics.vector.ImageVector, isDropdown: Boolean = false) {
+fun ParameterCard(
+    label: String,
+    value: String,
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    isDropdown: Boolean = false,
+    onClick: () -> Unit = {}
+) {
     Card(
         modifier = Modifier.fillMaxWidth(),
+        onClick = onClick,
         shape = RoundedCornerShape(16.dp),
         colors = CardDefaults.cardColors(containerColor = Color(0xFFF2F4F7).copy(alpha = 0.5f))
     ) {
@@ -267,7 +359,15 @@ fun ParameterCard(label: String, value: String, icon: androidx.compose.ui.graphi
 }
 
 @Composable
-fun ConfigListItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title: String, subtitle: String, hasSwitch: Boolean = false, isLast: Boolean = false) {
+fun ConfigListItem(
+    icon: androidx.compose.ui.graphics.vector.ImageVector,
+    title: String,
+    subtitle: String,
+    hasSwitch: Boolean = false,
+    switchState: Boolean = false,
+    onSwitchChange: (Boolean) -> Unit = {},
+    isLast: Boolean = false
+) {
     Column {
         Row(
             modifier = Modifier.fillMaxWidth().padding(20.dp),
@@ -286,9 +386,14 @@ fun ConfigListItem(icon: androidx.compose.ui.graphics.vector.ImageVector, title:
             }
             if (hasSwitch) {
                 Switch(
-                    checked = false, 
-                    onCheckedChange = {},
-                    colors = SwitchDefaults.colors(checkedThumbColor = Color(0xFF001944))
+                    checked = switchState, 
+                    onCheckedChange = onSwitchChange,
+                    colors = SwitchDefaults.colors(
+                        checkedThumbColor = Color.White,
+                        checkedTrackColor = Color(0xFF001944),
+                        uncheckedThumbColor = Color.White,
+                        uncheckedTrackColor = Color(0xFFE6E8EB)
+                    )
                 )
             } else {
                 Icon(Icons.Default.ChevronRight, contentDescription = null, tint = Color.Gray)

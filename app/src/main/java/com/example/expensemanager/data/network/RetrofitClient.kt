@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object RetrofitClient {
     private const val EMULATOR_URL = "http://10.0.2.2:5001/"
-    private const val PHYSICAL_DEVICE_URL = "http://192.168.0.100:5001/"
+    private const val PHYSICAL_DEVICE_URL = "http://10.128.207.245:5001/"
 
     private val BASE_URL: String
         get() = if (isEmulator) EMULATOR_URL else PHYSICAL_DEVICE_URL

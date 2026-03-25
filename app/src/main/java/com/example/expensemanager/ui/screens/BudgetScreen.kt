@@ -94,7 +94,7 @@ fun BudgetScreen(
                     },
                     colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF001944))
                 ) {
-                    Text("Add")
+                    Text("Add", color = Color.White)
                 }
             },
             dismissButton = {
@@ -225,7 +225,7 @@ fun BudgetScreen(
                         ) {
                             Icon(Icons.Default.EditNote, contentDescription = null, modifier = Modifier.size(18.dp))
                             Spacer(modifier = Modifier.width(4.dp))
-                            Text("Adjust Budget", fontSize = 12.sp)
+                            Text("Adjust Budget", color = Color.White, fontSize = 12.sp)
                         }
                     }
                 }
@@ -424,12 +424,12 @@ fun CategoryBudgetCard(category: CategoryBudget) {
             Spacer(modifier = Modifier.height(12.dp))
 
             Text(
-                if (category.category == "Food & Dining") "Food" else category.category, 
-                fontSize = 18.sp, 
-                fontWeight = FontWeight.Bold, 
+                if (category.category == "Food & Dining") "Food" else category.category,
+                fontSize = 18.sp,
+                fontWeight = FontWeight.Bold,
                 color = Color(0xFF001944)
             )
-            Text("₹${category.spent.toInt()} of ₹${category.limit.toInt()}", fontSize = 12.sp, color = Color.Gray)
+            Text("₹${category.spent.toInt()} of ₹${category.limit.toInt()}", fontSize = 10.sp, color = Color.Gray)
 
             Spacer(modifier = Modifier.height(12.dp))
 
