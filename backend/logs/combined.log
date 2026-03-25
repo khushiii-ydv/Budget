@@ -1,0 +1,366 @@
+{"address":"0.0.0.0","code":"EADDRINUSE","errno":-4091,"level":"error","message":"SERVER ERROR EVENT: listen EADDRINUSE: address already in use 0.0.0.0:5001","port":5001,"service":"budgetbee-backend","stack":"Error: listen EADDRINUSE: address already in use 0.0.0.0:5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at node:net:2206:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","syscall":"listen","timestamp":"2026-03-25 08:08:16"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:08:16"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:08:16"}
+{"level":"info","message":"Server is running on port 5001","service":"budgetbee-backend","timestamp":"2026-03-25 08:10:51"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:10:51"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:10:51"}
+{"level":"info","message":"Server is running on port 5001","service":"budgetbee-backend","timestamp":"2026-03-25 08:11:51"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:11:51"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:11:51"}
+{"address":"0.0.0.0","code":"EADDRINUSE","errno":-4091,"level":"error","message":"SERVER ERROR EVENT: listen EADDRINUSE: address already in use 0.0.0.0:5001","port":5001,"service":"budgetbee-backend","stack":"Error: listen EADDRINUSE: address already in use 0.0.0.0:5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at node:net:2206:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","syscall":"listen","timestamp":"2026-03-25 08:12:02"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:12:03"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:12:03"}
+{"level":"info","message":"Server is running on port 5001","service":"budgetbee-backend","timestamp":"2026-03-25 08:12:41"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:12:41"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:12:41"}
+{"level":"info","message":"[REQ] POST /api/auth/register","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:22"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:22"}
+{"level":"info","message":"[AUTH] Register OTP for 8956775257: 1234 (Data stored for verification)","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:22"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:22 +0000] \"POST /api/auth/register HTTP/1.1\" 200 50 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:22"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:26"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:27 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 282 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:27"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:27"}
+{"level":"info","message":"[DB] Forced seeding: Wiping old data and seeding exact image data for user 5...","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:27"}
+{"level":"info","message":"[DB] Successfully seeded exact image data (Transactions, Budgets, Goals) for user 5","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:27"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:27 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 805 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:27"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:30"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:30 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 586 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:30"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:30"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:30 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 278 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:30"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:32"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:32 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:32"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:32"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:32 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:32"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:37"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:37 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:37"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:40"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:40"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:40 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 805 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:40"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:45"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:43:45 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:13:45"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:18"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:19"}
+{"level":"info","message":"[AUTH] Login OTP for 8956775257: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:19"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:44:19 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:19"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:23"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:44:23 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 282 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:23"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:23"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:44:24 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 805 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:24"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:32"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:14:55"}
+{"address":"0.0.0.0","code":"EADDRINUSE","errno":-4091,"level":"error","message":"SERVER ERROR EVENT: listen EADDRINUSE: address already in use 0.0.0.0:5001","port":5001,"service":"budgetbee-backend","stack":"Error: listen EADDRINUSE: address already in use 0.0.0.0:5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at node:net:2206:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","syscall":"listen","timestamp":"2026-03-25 08:22:02"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:22:02"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:22:02"}
+{"level":"info","message":"Server is running on port 5001","service":"budgetbee-backend","timestamp":"2026-03-25 08:22:49"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:22:49"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:22:49"}
+{"level":"info","message":"[REQ] POST /api/auth/register","service":"budgetbee-backend","timestamp":"2026-03-25 08:23:26"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:23:26"}
+{"level":"info","message":"[AUTH] Register OTP for 9999888877: 1234 (Data stored for verification)","service":"budgetbee-backend","timestamp":"2026-03-25 08:23:26"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:53:26 +0000] \"POST /api/auth/register HTTP/1.1\" 200 50 \"-\" \"-\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:23:26"}
+{"address":"0.0.0.0","code":"EADDRINUSE","errno":-4091,"level":"error","message":"SERVER ERROR EVENT: listen EADDRINUSE: address already in use 0.0.0.0:5001","port":5001,"service":"budgetbee-backend","stack":"Error: listen EADDRINUSE: address already in use 0.0.0.0:5001\n    at Server.setupListenHandle [as _listen2] (node:net:1940:16)\n    at listenInCluster (node:net:1997:12)\n    at node:net:2206:7\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)","syscall":"listen","timestamp":"2026-03-25 08:26:24"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:26:24"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 08:26:24"}
+{"level":"info","message":"[REQ] POST /api/auth/register","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:09"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:09"}
+{"level":"info","message":"[AUTH] Register OTP for 7720087528: 1234 (Data stored for verification)","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:09"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:09 +0000] \"POST /api/auth/register HTTP/1.1\" 200 50 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:09"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:12"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:12 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 313 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:12"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:12"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:12 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 134 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:12"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:19"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:19 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 154 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:19"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:19"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:19 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 27 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:19"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:22"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:22 +0000] \"GET /api/insights HTTP/1.1\" 200 46 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:22"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:22"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:22 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:22"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:24"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 08:28:24"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:24 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:24"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:43"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:43"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:43"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:43 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:43"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:46"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:46 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:46"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:46"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:46 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:46"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:49"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:49 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:49"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:49"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:49 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:49"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:51"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:51 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:51"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:51"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:51 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:51"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:53"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 08:28:53"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:02:58:53 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:28:53"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:26"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:26"}
+{"level":"info","message":"[AUTH] Login OTP for 7720087528: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:26"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:26 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:26"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:29"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:29 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 313 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:29"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:30"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:30 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 134 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:30"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:33"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 08:33:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:33 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:33"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:37"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:37"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:37 +0000] \"GET /api/insights HTTP/1.1\" 200 46 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:37"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:37"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:37 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:37"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:40"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:40 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 154 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:40"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:40"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:40 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 27 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:40"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:43"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:43 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 134 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:43"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:46"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 08:33:46"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:03:03:46 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 08:33:46"}
+{"level":"info","message":"Server is running on port 5001","service":"budgetbee-backend","timestamp":"2026-03-25 11:17:13"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:17:13"}
+{"level":"info","message":"[DB] Tables initialized and seeded successfully","service":"budgetbee-backend","timestamp":"2026-03-25 11:17:13"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 11:31:48"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:31:48"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 11:31:48"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:01:48 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:31:48"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:04"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:04"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:02:04 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:04"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:04"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:02:04 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:04"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:24"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:24"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:02:24 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:24"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:24"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:02:24 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:32:24"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:00"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:00"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:00 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:00"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:00"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:00 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:00"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:07"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 11:33:07"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:07 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:07"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:22"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:22"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:22 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:22"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:41"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:41"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:41 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:41"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:41"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:41 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:41"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:47"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:47 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:47"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:47"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:47 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:47"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:53"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:53 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:53"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:53"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:03:53 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:33:53"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:04"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:04"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:04 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:04"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:08"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:09 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:09"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:09"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:09 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:09"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:17"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:17 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:17"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:17"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:17 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:17"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:23"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 11:34:23"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:23 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:23"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:26"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:26"}
+{"level":"info","message":"10.37.178.185 - - [25/Mar/2026:06:04:26 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 11:34:26"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:42"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:42"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:42"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:21:42 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:42"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:46"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:21:46 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:46"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:46"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:21:46 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:46"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:49"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 12:51:49"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:21:49 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:51:49"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:19"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:19"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:24:19 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:19"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:47"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:47"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:24:47 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:47"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:47"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:24:47 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:47"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:56"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:24:56 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:54:56"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:00"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:25:00 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:00"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:00"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:25:00 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 294 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:00"}
+{"level":"info","message":"[REQ] POST /api/budgets/goals/2/add-fund","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:25:36 +0000] \"POST /api/budgets/goals/2/add-fund HTTP/1.1\" 200 170 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:25:36 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:25:36 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:55:36"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:25"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:25"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:25 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:25"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:25"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:25 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:25"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:28"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:28 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:28"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:28"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:28 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:28"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:31"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:31 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:31"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:31"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:31 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:31"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:33 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:33"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:33 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:33"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:37"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 12:56:37"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:26:37 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 12:56:37"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:04:50"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:04:51"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:04:51"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:34:51 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:04:51"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:03"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:03"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:35:03 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:03"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:03"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:35:03 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:03"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:06"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 13:05:06"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:35:06 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:05:06"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:17"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:17"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:17"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:17 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:17"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:19"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:19 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:19"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:20"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:20 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:20"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:23"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 13:10:23"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:23 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:23"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:27"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:27"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:27 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:27"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:29"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 13:10:29"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:40:29 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:10:29"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:27"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:28"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:28"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:44:28 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:28"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:44:33 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:33"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:44:33 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:33"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:37"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 13:14:37"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:44:37 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:14:37"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:05"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:05"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:05"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:05 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:05"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:07"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:07 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:07"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:07"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:07 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:07"}
+{"level":"info","message":"[REQ] GET /api/auth/profile","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:12"}
+{"code":"42703","file":"parse_relation.c","length":114,"level":"error","line":"3827","message":"[AUTH] Error: column \"monthly_income\" does not exist column \"monthly_income\" does not exist","name":"error","position":"33","routine":"errorMissingColumn","service":"budgetbee-backend","severity":"ERROR","stack":"error: column \"monthly_income\" does not exist\n    at C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\node_modules\\pg-pool\\index.js:45:11\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async exports.getProfile (C:\\Users\\Khushi\\OneDrive\\Desktop\\Expense_Manager\\backend\\controllers\\authController.js:165:28)","timestamp":"2026-03-25 13:19:12"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:12 +0000] \"GET /api/auth/profile HTTP/1.1\" 500 12 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:12"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:14"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:14"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:15 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:15"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:15"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:15 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:15"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:26"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:27"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:27 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:27"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:31"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:31 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:31"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:31"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:31 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:31"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:42"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:42"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:42 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:42"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:42"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:42 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:42"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:45"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:45 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:45"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:45"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:45 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:45"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:46"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:46 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:46"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:46"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:49:46 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:19:46"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:05"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:05"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:50:05 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:05"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:05"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:50:05 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:05"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:08"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:50:08 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:08"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:10"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:50:10 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:10"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:10"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:50:10 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:20:10"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:23:46"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:23:46"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:53:46 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:23:46"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:26"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:26"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:26"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:26 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:26"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:29"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:29 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:29"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:29"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:29 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:29"}
+{"level":"info","message":"[REQ] GET /api/budgets/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:33 +0000] \"GET /api/budgets/summary HTTP/1.1\" 200 579 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:33"}
+{"level":"info","message":"[REQ] GET /api/budgets/goals","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:33"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:33 +0000] \"GET /api/budgets/goals HTTP/1.1\" 200 309 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:33"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:34"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:34 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:34"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:35"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:54:35 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:24:35"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:31"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:32"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:32"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:55:32 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:32"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:35"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:55:35 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:35"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:35"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:55:35 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:35"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:39"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:55:39 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:39"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:39"}
+{"level":"info","message":"127.0.0.1 - - [25/Mar/2026:07:55:39 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:25:39"}
+{"level":"info","message":"[REQ] POST /api/auth/login","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:41"}
+{"level":"info","message":"[DB] Connected to PostgreSQL","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:41"}
+{"level":"info","message":"[AUTH] Login OTP for 9307136478: 1234","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:42"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:58:42 +0000] \"POST /api/auth/login HTTP/1.1\" 200 59 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:42"}
+{"level":"info","message":"[REQ] POST /api/auth/verify-otp","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:43"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:58:43 +0000] \"POST /api/auth/verify-otp HTTP/1.1\" 200 315 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:43"}
+{"level":"info","message":"[REQ] GET /api/dashboard/summary","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:43"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:58:43 +0000] \"GET /api/dashboard/summary HTTP/1.1\" 200 803 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:43"}
+{"level":"info","message":"[REQ] GET /api/insights","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:46"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:58:46 +0000] \"GET /api/insights HTTP/1.1\" 200 399 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:46"}
+{"level":"info","message":"[REQ] GET /api/insights/suggestions","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:46"}
+{"level":"info","message":"10.128.207.139 - - [25/Mar/2026:07:58:46 +0000] \"GET /api/insights/suggestions HTTP/1.1\" 200 176 \"-\" \"okhttp/3.14.9\"","service":"budgetbee-backend","timestamp":"2026-03-25 13:28:46"}
